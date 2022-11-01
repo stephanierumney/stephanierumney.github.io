@@ -74,8 +74,8 @@
 
           <div class="col-6 col-xl-4">
             <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0"><img class="text-primary"
-                  src="images/logo.jpg" width="48px" /><span class="text-primary"> The sky's the limit...</span><span
-                  class="text-primary">.</span> </a></h1>
+                  src="images/logo.jpg" width="48px" /><span class="text-primary"> The sky's the limit...</span> </a>
+            </h1>
           </div>
           <div class="col-12 col-md-8 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
@@ -346,18 +346,14 @@
 
 
 
-            <form action="#" class="p-5 bg-white">
+            <form action="https://formspree.io/hello@src-ed.co.uk" method="POST" class="p-5 bg-white">
 
               <h2 class="h4 text-black mb-5">Contact Form</h2>
 
               <div class="row form-group">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">First Name</label>
-                  <input type="text" id="fname" class="form-control">
-                </div>
-                <div class="col-md-6">
-                  <label class="text-black" for="lname">Last Name</label>
-                  <input type="text" id="lname" class="form-control">
+                <div class="col-md-12">
+                  <label class="text-black" for="name">Name</label>
+                  <input type="email" id="email" name="name" class="form-control">
                 </div>
               </div>
 
@@ -365,7 +361,7 @@
 
                 <div class="col-md-12">
                   <label class="text-black" for="email">Email</label>
-                  <input type="email" id="email" class="form-control">
+                  <input type="email" id="email" name="email" class="form-control">
                 </div>
               </div>
 
@@ -373,15 +369,15 @@
 
                 <div class="col-md-12">
                   <label class="text-black" for="subject">Subject</label>
-                  <input type="subject" id="subject" class="form-control">
+                  <input type="subject" id="subject" name="subject" class="form-control">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="text-black" for="message">Message</label>
-                  <textarea name="message" id="message" cols="30" rows="7" class="form-control"
-                    placeholder="Write your notes or questions here..."></textarea>
+                  <textarea name="message" id="message" name="message" cols="30" rows="7" class="form-control"
+                    placeholder="Please provide a summary of what you would like more information about..."></textarea>
                 </div>
               </div>
 
@@ -484,6 +480,10 @@
                 Copyright &copy;
                 <script>document.write(new Date().getFullYear());</script> Stephanie Rumney Consultancy. All rights
                 reserved
+                <br />
+              <p>Based on Consula Theme by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
               </p>
             </div>
           </div>
