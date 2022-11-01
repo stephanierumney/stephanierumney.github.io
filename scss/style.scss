@@ -1,7 +1,6 @@
 @import "bootstrap/functions";
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
-@import url('http://fonts.cdnfonts.com/css/snell-roundhand');
 
 /* Base */
 @import "site-base";
@@ -9,3 +8,10 @@
 @import "site-navbar";
 /* Blocks */
 @import "site-blocks";
+
+@font-face {
+    font-family: 'Snell Roundhand';
+    font-style: italic;
+    font-weight: 500;
+    src: local('Snell Roundhand'), url('fonts/SnellRoundhand.woff') format('woff');
+}
