@@ -5595,7 +5595,16 @@ button.close {
 .modal-body {
   position: relative;
   flex: 1 1 auto;
-  padding: 1rem;
+  padding: 2.5rem;
+  line-height: 2rem;
+}
+
+.modal-body ul {
+  margin-left: -0.5rem;
+}
+
+.modal-body ul li {
+  padding-bottom: .5em;
 }
 
 .modal-footer {
