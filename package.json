@@ -1,0 +1,9 @@
+{
+  "name": "stephanierumney-github-io",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Stephanie Rumney Consultancy website",
+  "scripts": {
+    "build": "node scripts/build.js"
+  }
+}

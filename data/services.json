@@ -1,0 +1,209 @@
+{
+  "services": [
+    {
+      "id": "fullDiagnostic",
+      "card": {
+        "title": "Full Diagnostic Assessment",
+        "shortDescription": "A face-to-face assessment followed by a substantial written report.",
+        "icon": "icon-file-text"
+      },
+      "modal": {
+        "title": "Full Diagnostic Assessment",
+        "bullets": [
+          "Approximately 3 hours, this can only be completed on individuals who are 8 years or older.",
+          "Assessment consists of standardised assessments which reflect strengths and challenges across underlying ability and cognitive processing abilities.",
+          "Assessment of attainment in the areas of reading, spelling, and writing.",
+          "Detailed diagnostic written report, including recommendations and any considerations for exam access arrangements.",
+          "This report will travel with the individual for life as I hold an APC."
+        ]
+      },
+      "schemaOffers": [
+        {
+          "name": "Full Diagnostic Assessment (Ages 8+)",
+          "description": "A face-to-face assessment followed by a substantial written report. Comprehensive diagnostic assessment including detailed recommendations and considerations for exam access arrangements.",
+          "price": 550,
+          "priceCurrency": "GBP"
+        }
+      ],
+      "feeRows": [
+        { "label": "Full Diagnostic Assessment Report (8+)", "price": "£550" },
+        {
+          "label": "Full Diagnostic Assessment Report - School Booking",
+          "price": "£POA"
+        }
+      ]
+    },
+    {
+      "id": "spotlightAssessment",
+      "card": {
+        "title": "Spotlight Assessment",
+        "shortDescription": "A face to face assessment followed by a short report. NB This assessment will not diagnose dyslexia.",
+        "icon": "icon-search"
+      },
+      "modal": {
+        "title": "Spotlight Assessment",
+        "bullets": [
+          "Approximately 1.5 hours, this can be completed on children from age 6+",
+          "Assessment will cover standardised tests of underlying ability and one further area of cognitive processing; such as phonological processing or working memory. A word reading and word spelling test will also be administered.",
+          "Detailed short written report, including recommendations.",
+          "Can be accompanied by a pupil focussed observation in class, for an additional fee."
+        ]
+      },
+      "schemaOffers": [
+        {
+          "name": "Spotlight Assessment",
+          "description": "A face to face assessment followed by a short report. Approximately 1.5 hours covering standardised tests of underlying ability and cognitive processing. For children from age 6+.",
+          "price": 300,
+          "priceCurrency": "GBP"
+        }
+      ],
+      "feeRows": [{ "label": "Spotlight Assessment", "price": "£300" }]
+    },
+    {
+      "id": "pupilObservation",
+      "card": {
+        "title": "Pupil Observation",
+        "shortDescription": "In class pupil focussed observation.",
+        "icon": "icon-users"
+      },
+      "modal": {
+        "title": "Pupil Observation",
+        "bullets": [
+          "Focus to be decided prior to observation.",
+          "Up to one hour observation in class.",
+          "Includes verbal feedback.",
+          "Optionally, written feedback can be provided for an additional charge."
+        ]
+      },
+      "schemaOffers": [
+        {
+          "name": "Pupil Observation",
+          "description": "In class pupil focused observation. Up to one hour observation with verbal feedback and optional written feedback."
+        }
+      ],
+      "feeRows": []
+    },
+    {
+      "id": "support",
+      "card": {
+        "title": "Family & School Support",
+        "shortDescription": "Guidance and recommendations for families and school staff.",
+        "icon": "icon-home2"
+      },
+      "modal": {
+        "title": "Family & School Support",
+        "bullets": [
+          "Sometimes support can come in the form of guidance and recommendations to the family/carers and staff supporting the individual in their journey.",
+          "Some examples include study skills, home routines to help improve home-life, and training in specific areas of need."
+        ]
+      },
+      "schemaOffers": [
+        {
+          "name": "Family & School Support",
+          "description": "Guidance and recommendations for families and school staff. Support includes study skills, home routines, and training in specific areas of need."
+        }
+      ],
+      "feeRows": []
+    },
+    {
+      "id": "specialistTeaching",
+      "card": {
+        "title": "Specialist Teaching",
+        "shortDescription": "1:1 teaching and study skills coaching.",
+        "icon": "icon-book"
+      },
+      "modal": {
+        "title": "Specialist Teaching",
+        "bullets": [
+          "Some individuals need their confidence and wellbeing boosted in relation to their learning.",
+          "Areas can be targeted such as literacy skills, study skills, emotional and mental wellbeing (although certified in Level 2 Counselling skills, I am not a counsellor).",
+          "My approach is holistic and does not separate learning from emotional and mental wellbeing.",
+          "Areas of focus are agreed beforehand.",
+          "Six week blocks also available at a cheaper rate."
+        ]
+      },
+      "schemaOffers": [
+        {
+          "name": "Specialist Teaching",
+          "description": "1:1 teaching and study skills coaching. Holistic approach targeting literacy skills, study skills, and emotional wellbeing.",
+          "price": 60,
+          "priceCurrency": "GBP"
+        },
+        {
+          "name": "Specialist Teaching Block Booking",
+          "description": "6 hours of 1:1 specialist teaching sessions (block booked rate).",
+          "price": 300,
+          "priceCurrency": "GBP"
+        }
+      ],
+      "feeRows": [
+        { "label": "Specialist Teaching 1:1 (hourly)", "price": "£60" },
+        {
+          "label": "6 Hours Specialist Teaching 1:1 (Block booked)",
+          "price": "£300 (£50 per session)"
+        }
+      ]
+    },
+    {
+      "id": "adultLearning",
+      "card": {
+        "title": "Adult Learning",
+        "shortDescription": "Support for individuals studying and in the workplace.",
+        "icon": "icon-cogs"
+      },
+      "modal": {
+        "title": "Adult Learning",
+        "bullets": [
+          "Areas of targeted support agreed beforehand such as; study skills, organisation, and planning time.",
+          "Emotional and mental wellbeing support available through the sessions and where it arises. Although I am certified in Level 2 Counselling Skills, I am not a counsellor. If it is apparent this would be advised, you will be signposted to counselling support."
+        ]
+      },
+      "schemaOffers": [
+        {
+          "name": "Adult Learning Support",
+          "description": "Support for individuals studying and in the workplace. Includes study skills, organization, planning, and wellbeing support."
+        }
+      ],
+      "feeRows": []
+    },
+    {
+      "id": "resilienceCoaching",
+      "card": {
+        "title": "Resilience Coaching",
+        "shortDescription": "Curriculum led education and wellness experience for 9 to 18 year olds.",
+        "icon": "icon-wb_sunny"
+      },
+      "modal": {
+        "title": "Resilience Coaching",
+        "bullets": [
+          "In small groups or 1:1, children and adolescents aged 9 to 18 will learn through experiential activities, videos, games and dynamic exercises, which take place over 11 interactive sessions.",
+          "Resilience coaching will empower your child to deal with issues such as self-esteem and labels, using social media, hostile behaviour of others, and disagreements and conflicts.",
+          "The Resilience Tutoring package includes the Creating a Resilient Family course for parents.",
+          "Resilience and wellbeing training gives your child the confidence to manage feelings and overcome difficulties.",
+          "Past participants have reported less anxiety, worry, fear and reactive behaviour and improved relationships with parents, siblings and peers."
+        ]
+      },
+      "schemaOffers": [
+        {
+          "name": "Resilience Coaching",
+          "description": "Curriculum led education and wellness experience for 9 to 18 year olds. 11 interactive sessions delivered in small groups or 1:1, including Creating a Resilient Family course for parents."
+        }
+      ],
+      "feeRows": [
+        { "label": "Resilience Coaching (11 sessions)", "price": "£POA" }
+      ]
+    },
+    {
+      "id": "consultation",
+      "schemaOffers": [
+        {
+          "name": "Consultation",
+          "description": "Professional consultation services for educational assessment and learning support.",
+          "price": 60,
+          "priceCurrency": "GBP"
+        }
+      ],
+      "feeRows": [{ "label": "Consultation", "price": "£60" }]
+    }
+  ]
+}
