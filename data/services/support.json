@@ -1,0 +1,23 @@
+{
+  "id": "support",
+  "order": 40,
+  "card": {
+    "title": "Family & School Support",
+    "shortDescription": "Guidance and recommendations for families and school staff.",
+    "icon": "icon-home2"
+  },
+  "modal": {
+    "title": "Family & School Support",
+    "bullets": [
+      "Sometimes support can come in the form of guidance and recommendations to the family/carers and staff supporting the individual in their journey.",
+      "Some examples include study skills, home routines to help improve home-life, and training in specific areas of need."
+    ]
+  },
+  "schemaOffers": [
+    {
+      "name": "Family & School Support",
+      "description": "Guidance and recommendations for families and school staff. Support includes study skills, home routines, and training in specific areas of need."
+    }
+  ],
+  "feeRows": []
+}

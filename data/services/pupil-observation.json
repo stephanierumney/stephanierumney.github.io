@@ -1,0 +1,25 @@
+{
+  "id": "pupilObservation",
+  "order": 30,
+  "card": {
+    "title": "Pupil Observation",
+    "shortDescription": "In class pupil focussed observation.",
+    "icon": "icon-users"
+  },
+  "modal": {
+    "title": "Pupil Observation",
+    "bullets": [
+      "Focus to be decided prior to observation.",
+      "Up to one hour observation in class.",
+      "Includes verbal feedback.",
+      "Optionally, written feedback can be provided for an additional charge."
+    ]
+  },
+  "schemaOffers": [
+    {
+      "name": "Pupil Observation",
+      "description": "In class pupil focused observation. Up to one hour observation with verbal feedback and optional written feedback."
+    }
+  ],
+  "feeRows": []
+}

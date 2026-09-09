@@ -1,13 +1,16 @@
 #!/usr/bin/env node
-// Renders Services, Fees, and JSON-LD sections in index.html from data/services.json.
+// Renders the CMS-managed sections of index.html from the JSON under data/.
 
 const fs = require("fs");
 const path = require("path");
+const { marked } = require("marked");
 
 const ROOT = path.resolve(__dirname, "..");
-const DATA_FILE = path.join(ROOT, "data", "services.json");
+const DATA_DIR = path.join(ROOT, "data");
+const SERVICES_DIR = path.join(DATA_DIR, "services");
+const POLICIES_DIR = path.join(DATA_DIR, "policies");
+const CONTENT_FILE = path.join(DATA_DIR, "content.json");
 const INDEX_FILE = path.join(ROOT, "index.html");
-
 const BUSINESS_INFO = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -161,6 +164,59 @@ function renderFeeRows(services) {
   return rows.join("\n");
 }
 
+function renderPolicyLinks(policies) {
+  return policies
+    .map(
+      (p) =>
+        `            <li><a href="${escapeHtml(p.file)}" target="_blank">${escapeHtml(p.title)}</a></li>`
+    )
+    .join("\n");
+}
+
+function renderAbout(about) {
+  const body = markdown(about.body)
+    .split("\n")
+    .map((line) => "                  " + line)
+    .join("\n");
+  return `                  <h2 class="section-title mb-3 text-primary">${escapeHtml(about.heading)}</h2>\n${body}`;
+}
+
+function renderAboutModal(about) {
+  const body = markdown(about.moreBody)
+    .split("\n")
+    .map((line) => "      " + line)
+    .join("\n");
+  return `      <div class="modal-header">
+      <h5 class="modal-title" id="aboutMeModalCenterTitle">${escapeHtml(about.moreTitle)}</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+      </button>
+      </div>
+      <div class="modal-body">
+${body}
+      </div>`;
+}
+
+function renderFooterAbout(footer) {
+  const body = markdown(footer.aboutBody)
+    .split("\n")
+    .map((line) => "      " + line)
+    .join("\n");
+  return `      <h2 class="footer-heading mb-4">${escapeHtml(footer.aboutHeading)}</h2>\n${body}`;
+}
+
+function markdown(text) {
+  return marked.parse(text || "", { async: false }).trim();
+}
+
+function readCollection(dir) {
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".json"))
+    .map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), "utf8")))
+    .sort((a, b) => (a.order ?? Number.MAX_SAFE_INTEGER) - (b.order ?? Number.MAX_SAFE_INTEGER));
+}
+
 function replaceMarker(html, name, content) {
   const re = new RegExp(`(<!-- BEGIN:${name} -->)([\\s\\S]*?)(<!-- END:${name} -->)`);
   if (!re.test(html)) {
@@ -170,16 +226,22 @@ function replaceMarker(html, name, content) {
 }
 
 function main() {
-  const data = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
-  const { services } = data;
+  const services = readCollection(SERVICES_DIR);
+  const policies = readCollection(POLICIES_DIR);
+  const content = JSON.parse(fs.readFileSync(CONTENT_FILE, "utf8"));
+
 
   let html = fs.readFileSync(INDEX_FILE, "utf8");
   html = replaceMarker(html, "JSON_LD", renderJsonLd(services));
   html = replaceMarker(html, "SERVICE_CARDS", renderCards(services));
   html = replaceMarker(html, "SERVICE_MODALS", renderModals(services));
   html = replaceMarker(html, "FEE_ROWS", renderFeeRows(services));
+  html = replaceMarker(html, "POLICY_LINKS", renderPolicyLinks(policies));
+  html = replaceMarker(html, "ABOUT", renderAbout(content.about));
+  html = replaceMarker(html, "ABOUT_MODAL", renderAboutModal(content.about));
+  html = replaceMarker(html, "FOOTER_ABOUT", renderFooterAbout(content.footer));
   fs.writeFileSync(INDEX_FILE, html);
-  console.error("built index.html from data/services.json");
+  console.error(`built index.html from ${services.length} services, ${policies.length} policies`);
 }
 
 main();

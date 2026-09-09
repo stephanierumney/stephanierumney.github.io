@@ -1,0 +1,31 @@
+{
+  "id": "resilienceCoaching",
+  "order": 70,
+  "card": {
+    "title": "Resilience Coaching",
+    "shortDescription": "Curriculum led education and wellness experience for 9 to 18 year olds.",
+    "icon": "icon-wb_sunny"
+  },
+  "modal": {
+    "title": "Resilience Coaching",
+    "bullets": [
+      "In small groups or 1:1, children and adolescents aged 9 to 18 will learn through experiential activities, videos, games and dynamic exercises, which take place over 11 interactive sessions.",
+      "Resilience coaching will empower your child to deal with issues such as self-esteem and labels, using social media, hostile behaviour of others, and disagreements and conflicts.",
+      "The Resilience Tutoring package includes the Creating a Resilient Family course for parents.",
+      "Resilience and wellbeing training gives your child the confidence to manage feelings and overcome difficulties.",
+      "Past participants have reported less anxiety, worry, fear and reactive behaviour and improved relationships with parents, siblings and peers."
+    ]
+  },
+  "schemaOffers": [
+    {
+      "name": "Resilience Coaching",
+      "description": "Curriculum led education and wellness experience for 9 to 18 year olds. 11 interactive sessions delivered in small groups or 1:1, including Creating a Resilient Family course for parents."
+    }
+  ],
+  "feeRows": [
+    {
+      "label": "Resilience Coaching (11 sessions)",
+      "price": "£POA"
+    }
+  ]
+}

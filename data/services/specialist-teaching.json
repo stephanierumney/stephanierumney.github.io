@@ -1,0 +1,43 @@
+{
+  "id": "specialistTeaching",
+  "order": 50,
+  "card": {
+    "title": "Specialist Teaching",
+    "shortDescription": "1:1 teaching and study skills coaching.",
+    "icon": "icon-book"
+  },
+  "modal": {
+    "title": "Specialist Teaching",
+    "bullets": [
+      "Some individuals need their confidence and wellbeing boosted in relation to their learning.",
+      "Areas can be targeted such as literacy skills, study skills, emotional and mental wellbeing (although certified in Level 2 Counselling skills, I am not a counsellor).",
+      "My approach is holistic and does not separate learning from emotional and mental wellbeing.",
+      "Areas of focus are agreed beforehand.",
+      "Six week blocks also available at a cheaper rate."
+    ]
+  },
+  "schemaOffers": [
+    {
+      "name": "Specialist Teaching",
+      "description": "1:1 teaching and study skills coaching. Holistic approach targeting literacy skills, study skills, and emotional wellbeing.",
+      "price": 60,
+      "priceCurrency": "GBP"
+    },
+    {
+      "name": "Specialist Teaching Block Booking",
+      "description": "6 hours of 1:1 specialist teaching sessions (block booked rate).",
+      "price": 300,
+      "priceCurrency": "GBP"
+    }
+  ],
+  "feeRows": [
+    {
+      "label": "Specialist Teaching 1:1 (hourly)",
+      "price": "£60"
+    },
+    {
+      "label": "6 Hours Specialist Teaching 1:1 (Block booked)",
+      "price": "£300 (£50 per session)"
+    }
+  ]
+}

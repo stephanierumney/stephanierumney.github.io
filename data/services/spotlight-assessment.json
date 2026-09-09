@@ -1,0 +1,32 @@
+{
+  "id": "spotlightAssessment",
+  "order": 20,
+  "card": {
+    "title": "Spotlight Assessment",
+    "shortDescription": "A face to face assessment followed by a short report. NB This assessment will not diagnose dyslexia.",
+    "icon": "icon-search"
+  },
+  "modal": {
+    "title": "Spotlight Assessment",
+    "bullets": [
+      "Approximately 1.5 hours, this can be completed on children from age 6+",
+      "Assessment will cover standardised tests of underlying ability and one further area of cognitive processing; such as phonological processing or working memory. A word reading and word spelling test will also be administered.",
+      "Detailed short written report, including recommendations.",
+      "Can be accompanied by a pupil focussed observation in class, for an additional fee."
+    ]
+  },
+  "schemaOffers": [
+    {
+      "name": "Spotlight Assessment",
+      "description": "A face to face assessment followed by a short report. Approximately 1.5 hours covering standardised tests of underlying ability and cognitive processing. For children from age 6+.",
+      "price": 300,
+      "priceCurrency": "GBP"
+    }
+  ],
+  "feeRows": [
+    {
+      "label": "Spotlight Assessment",
+      "price": "£300"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "adultLearning",
+  "order": 60,
+  "card": {
+    "title": "Adult Learning",
+    "shortDescription": "Support for individuals studying and in the workplace.",
+    "icon": "icon-cogs"
+  },
+  "modal": {
+    "title": "Adult Learning",
+    "bullets": [
+      "Areas of targeted support agreed beforehand such as; study skills, organisation, and planning time.",
+      "Emotional and mental wellbeing support available through the sessions and where it arises. Although I am certified in Level 2 Counselling Skills, I am not a counsellor. If it is apparent this would be advised, you will be signposted to counselling support."
+    ]
+  },
+  "schemaOffers": [
+    {
+      "name": "Adult Learning Support",
+      "description": "Support for individuals studying and in the workplace. Includes study skills, organization, planning, and wellbeing support."
+    }
+  ],
+  "feeRows": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "fullDiagnostic",
+  "order": 10,
+  "card": {
+    "title": "Full Diagnostic Assessment",
+    "shortDescription": "A face-to-face assessment followed by a substantial written report.",
+    "icon": "icon-file-text"
+  },
+  "modal": {
+    "title": "Full Diagnostic Assessment",
+    "bullets": [
+      "Approximately 3 hours, this can only be completed on individuals who are 8 years or older.",
+      "Assessment consists of standardised assessments which reflect strengths and challenges across underlying ability and cognitive processing abilities.",
+      "Assessment of attainment in the areas of reading, spelling, and writing.",
+      "Detailed diagnostic written report, including recommendations and any considerations for exam access arrangements.",
+      "This report will travel with the individual for life as I hold an APC."
+    ]
+  },
+  "schemaOffers": [
+    {
+      "name": "Full Diagnostic Assessment (Ages 8+)",
+      "description": "A face-to-face assessment followed by a substantial written report. Comprehensive diagnostic assessment including detailed recommendations and considerations for exam access arrangements.",
+      "price": 550,
+      "priceCurrency": "GBP"
+    }
+  ],
+  "feeRows": [
+    {
+      "label": "Full Diagnostic Assessment Report (8+)",
+      "price": "£550"
+    },
+    {
+      "label": "Full Diagnostic Assessment Report - School Booking",
+      "price": "£POA"
+    }
+  ]
+}
