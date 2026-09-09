@@ -1,0 +1,18 @@
+{
+  "id": "consultation",
+  "order": 80,
+  "schemaOffers": [
+    {
+      "name": "Consultation",
+      "description": "Professional consultation services for educational assessment and learning support.",
+      "price": 60,
+      "priceCurrency": "GBP"
+    }
+  ],
+  "feeRows": [
+    {
+      "label": "Consultation",
+      "price": "£60"
+    }
+  ]
+}
